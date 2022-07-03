@@ -1,4 +1,5 @@
 import './App.css'
+//teste
 function App() {
   const pagina = [{
     item: <img className='fotos' src='https://www.ifpb.edu.br/ti/sistemas/imagens/suap.jpg/@@images/image.jpeg'></img>, 
