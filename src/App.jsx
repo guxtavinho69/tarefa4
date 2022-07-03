@@ -1,38 +1,59 @@
 import './App.css'
-
 function App() {
-  const noticias = [{
-    noticia: "Funcionária que anunciou procurador diz que agressor 'desprezava mulheres' e teme sair na rua: 'Muito medo'", 
+  const pagina = [{
+    item: <img className='fotos' src='https://www.ifpb.edu.br/ti/sistemas/imagens/suap.jpg/@@images/image.jpeg'></img>, 
+    descricao: "aaaaaaa"
   },
   {
-    noticia: "Imposto de Renda 2022: Receita abre consultas ao 2° lote de restituição nesta quinta;veja se você está no grupo", 
+    item: <img className='fotos' src='https://www.ifpb.edu.br/ti/sistemas/imagens/suap.jpg/@@images/image.jpeg'></img>, 
+    descricao: "aaaaaaa"
   },
   {
-    noticia: "Governo opera para evitar CPI do MEC que ganhou força após prisão de Milton Ribeiro", 
+    item: <img className='fotos' src='https://www.ifpb.edu.br/ti/sistemas/imagens/suap.jpg/@@images/image.jpeg'></img>, 
+    descricao: "aaaaaaa"
   },
   {
-    noticia: "Em Itajubá, assaltantes armados atacam agência da Caixa Econômica Federal; 7 ficam feridos", 
+    item: <img className='fotos' src='https://www.ifpb.edu.br/ti/sistemas/imagens/suap.jpg/@@images/image.jpeg'></img>, 
+    descricao: "aaaaaaa"
   },
   {
-    noticia: "Almir Sater é 'parado em blitz' e policiais tietam cantor: 'o senhor é cono dessa chalana?'", 
+    item: <img className='fotos' src='https://www.ifpb.edu.br/ti/sistemas/imagens/suap.jpg/@@images/image.jpeg'></img>, 
+    descricao: "aaaaaaa"
+  },
+  {
+    item: <img className='fotos' src='https://www.ifpb.edu.br/ti/sistemas/imagens/suap.jpg/@@images/image.jpeg'></img>, 
+    descricao: "aaaaaaa"
+  },
+  {
+    item: <img className='fotos' src='https://www.ifpb.edu.br/ti/sistemas/imagens/suap.jpg/@@images/image.jpeg'></img>, 
+    descricao: "aaaaaaa"
+  },
+  {
+    item: <img className='fotos' src='https://www.ifpb.edu.br/ti/sistemas/imagens/suap.jpg/@@images/image.jpeg'></img>, 
+    descricao: "aaaaaaa"
+  },
+  {
+    item: <img className='fotos' src='https://www.ifpb.edu.br/ti/sistemas/imagens/suap.jpg/@@images/image.jpeg'></img>, 
+    descricao: "aaaaaaa"
+  },
+  {
+    item: <img className='fotos' src='https://www.ifpb.edu.br/ti/sistemas/imagens/suap.jpg/@@images/image.jpeg'></img>, 
+    descricao: "aaaaaaa"
   }
 ]
-  const menu_noticias = noticias.map(
-    (menu_noticias)=>
-    <ol className='not'>
-      <li className='li'>
-        <div className='lista'>
-          {menu_noticias.noticia }
+  const menu_item = pagina.map(
+    (menu_item)=>
+        <div className='itens'>
+          {menu_item.item }
+          <br></br>
+          {menu_item.descricao}
         </div>
-      
-      </li>
-    </ol>
    
   )
   return(
     <div className='componente' >
-      <p className='p'>mais noticias</p>
-      {menu_noticias}
+
+      {menu_item}
       
     </div>
   )
